@@ -1,14 +1,524 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello Roman Boilerplate</title>
-  <script defer src="src/js/index.js"></script>
-  <link href="dist/styles/index.css" rel="stylesheet">
-</head>
-<body>
-  <h1>Hello Roman!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Construction website concept</title>
+    <link href="dist/styles/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute py-lg-4 py-2 w-100"
+    >
+      <a class="navbar-brand" href="#"
+        ><h2 class="font-weight-bold d-none d-lg-block">
+          Construction<span class="text-primary">Company.</span>
+        </h2>
+        <h2 class="font-weight-bold d-block d-lg-none">C<span class="text-primary">C.</span></h2></a
+      >
+      <button class="navbar-toggler navbar__toggler" data-toggle="collapse">
+        <span></span><span></span>
+      </button>
+      <div class="navbar__menu d-flex align-items-center" id="collapse">
+        <ul class="navbar-nav ml-5 mr-auto mt-2 mt-lg-0">
+          <li class="nav-item mx-3 active">
+            <a class="nav-link text-uppercase" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-uppercase" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-uppercase" href="#services">Services</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-uppercase" href="#testimonials">Testimonials</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary btn-lg ml-auto d-none d-lg-block">Request Inquiry</button>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h1 class="display-4 display-lg-2 font-weight-bold text-white">
+              Constructions made <span class="text-primary">easy.</span>
+            </h1>
+            <p class="text-white mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga hic eum praesentium
+              consequatur omnis eaque. Iusto doloribus eos aspernatur, non assumenda unde minus a
+              ullam consequatur! Modi nemo quia quas.
+            </p>
+            <a class="btn btn-primary btn-lg mt-4 hero__btn" href="#" role="button"
+              >View services</a
+            >
+          </div>
+          <div class="col-12 col-md-6"></div>
+        </div>
+      </div>
+      <div class="hero__slider-outer">
+        <div class="slider" id="heroSlider">
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+        </div>
+      </div>
+      <div
+        class="hero__slider-indicators position-absolute bg-light-gray align-items-center d-none d-lg-flex"
+      >
+        <i class="fas fa-arrow-left slide-prev"></i>
+        <div class="slick-dots-container"></div>
+        <i class="fas fa-arrow-right slide-next"></i>
+      </div>
+    </section>
+    <section class="about padding" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <p class="text-uppercase text-primary border-bottom pb-3 border-black">About us</p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="text-white display-4 font-weight-bold ml-0 ml-lg-4">
+              we've been building our experience since 1993.
+            </p>
+          </div>
+        </div>
+        <div class="row py-5 mt-lg-5">
+          <div class="col-12 col-sm-6 col-lg-3 p-md-5 p-2 text-center text-lg-left">
+            <h1 class="display-2 text-primary font-weight-bold count-up">478</h1>
+            <p class="text-gray">Employees we've employed for almost 30 years</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 p-md-5 p-2 text-center text-lg-left">
+            <h1 class="display-2 text-primary font-weight-bold count-up">26</h1>
+            <p class="text-gray">Years of experience in costruction industry</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 p-md-5 p-2 text-center text-lg-left">
+            <h1 class="display-2 text-primary font-weight-bold count-up">268</h1>
+            <p class="text-gray">Projects completed in 2016-2019</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 p-md-5 p-2 text-center text-lg-left">
+            <h1 class="display-2 text-primary font-weight-bold count-up">3.8</h1>
+            <p class="text-gray">Milion dollar value of investments</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-lg-6">
+            <img src="src/assets/images/about-1.jpg" width="100%" alt="about-img" />
+          </div>
+          <div class="col-12 col-lg-6 pl-lg-5 mt-5 mt-lg-0">
+            <p class="text-white about__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla numquam nesciunt
+              voluptatibus repellat ad repellendus maiores perferendis iusto sapiente architecto!
+            </p>
+            <p class="text-white about__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deserunt
+              assumenda tenetur ipsa ab neque, quasi ducimus voluptate adipisci eveniet amet non
+              laborum dolore accusamus ratione tempore, facere minus corrupti. Perspiciatis debitis
+              nemo, dolorem, nulla architecto et quasi, minima at voluptatum nostrum labore libero
+              itaque. Sequi veniam dicta totam recusandae.
+            </p>
+            <a href="#testimonials" class="btn btn-primary btn-lg mt-3 px-5">Testimonials</a>
+          </div>
+        </div>
+      </div>
+      <div class="about__bottom d-none d-lg-block"></div>
+    </section>
+    <section class="services bg-black padding" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <p class="text-white display-4 font-weight-bold">
+              Building the best places to live.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <p class="text-uppercase text-primary border-bottom pb-3 border-white text-lg-right">
+              Services
+            </p>
+          </div>
+        </div>
+        <div class="row mt-lg-5 mt-2 services__grid">
+          <div class="col-12 col-lg-6 mt-lg-5 mt-4">
+            <div class="card h-100 rounded-0 bg-black text-white border-gray py-lg-5 py-4 px-4">
+              <div class="row no-gutters h-100">
+                <div class="col-2">
+                  <img
+                    src="src/assets/images/drawing&creation.svg"
+                    class=""
+                    alt="drawing&creation"
+                  />
+                </div>
+                <div class="col-10">
+                  <div
+                    class="card-body pl-3 pl-lg-0 h-100 p-0 d-flex flex-column justify-content-between"
+                  >
+                    <h4 class="card-title">Drawing & Creation</h4>
+                    <p class="card-text text-gray">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cumque ipsa
+                      accusamus, nisi beatae praesentium odit amet ab doloribus adipisci?
+                    </p>
+                    <a href="" class="text-primary"
+                      >Learn more <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mt-lg-5 mt-2">
+            <div class="card h-100 rounded-0 bg-black text-white border-gray py-lg-5 py-4 px-4">
+              <div class="row no-gutters h-100">
+                <div class="col-2">
+                  <img
+                    src="src/assets/images/commercial-construction.svg"
+                    alt="commercial-construction"
+                  />
+                </div>
+                <div class="col-10">
+                  <div
+                    class="card-body pl-3 pl-lg-0 h-100 p-0 d-flex flex-column justify-content-between"
+                  >
+                    <h4 class="card-title">Commercial Construction</h4>
+                    <p class="card-text text-gray">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident,
+                      quibusdam blanditiis doloribus a saepe voluptate commodi obcaecati ut nisi
+                      dolorum quos, deserunt cumque.
+                    </p>
+                    <a href="" class="text-primary"
+                      >Learn more <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mt-lg-5 mt-2">
+            <div class="card h-100 rounded-0 bg-black text-white border-gray py-lg-5 py-4 px-4">
+              <div class="row no-gutters h-100">
+                <div class="col-2">
+                  <img
+                    src="src/assets/images/bridge-construction.svg"
+                    class=""
+                    alt="bridge-construction"
+                  />
+                </div>
+                <div class="col-10">
+                  <div
+                    class="card-body pl-3 pl-lg-0 h-100 p-0 d-flex flex-column justify-content-between"
+                  >
+                    <h4 class="card-title">Renovations</h4>
+                    <p class="card-text text-gray">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident,
+                      quibusdam blanditiis doloribus a saepe voluptate commodi obcaecati ut nisi
+                      dolorum quos, deserunt cumque.
+                    </p>
+                    <a href="" class="text-primary"
+                      >Learn more <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mt-lg-5 mt-2">
+            <div class="card h-100 rounded-0 bg-black text-white border-gray py-lg-5 py-4 px-4">
+              <div class="row no-gutters h-100">
+                <div class="col-2">
+                  <img src="src/assets/images/renovation.svg" alt="renovation" />
+                </div>
+                <div class="col-10">
+                  <div
+                    class="card-body pl-3 pl-lg-0 h-100 p-0 d-flex flex-column justify-content-between"
+                  >
+                    <h4 class="card-title">Commercial Construction</h4>
+                    <p class="card-text text-gray">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident,
+                      quibusdam blanditiis doloribus a saepe voluptate commodi obcaecati ut nisi
+                      dolorum quos, deserunt cumque.
+                    </p>
+                    <a href="" class="text-primary"
+                      >Learn more <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-12 col-lg-6 col-xl-4 offset-xl-2 offset-0 bg-dark projects__text position-relative"
+          >
+            <p class="text-primary text-uppercase">Projects</p>
+            <div class="mt-5">
+              <div class="slider">
+                <div class="slider-item">
+                  <div class="row">
+                    <div class="col-2 col-lg-3"><h1 class="font-weight-bold display-4">01</h1></div>
+                    <div class="col-10 col-lg-9 pb-lg-5">
+                      <h2 class="font-weight-bold text-white">
+                        Bulding multi-family housing estate
+                      </h2>
+                      <p class="text-white mt-lg-5 mt-3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae libero
+                        ipsum nemo veritatis, consequuntur blanditiis inventore. Hic quae voluptate
+                        quibusdam?
+                      </p>
+                      <p class="text-gray mt-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque
+                        sint.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="row">
+                    <div class="col-2 col-lg-3"><h1 class="font-weight-bold display-4">02</h1></div>
+                    <div class="col-10 col-lg-9 pb-lg-5">
+                      <h2 class="font-weight-bold text-white">
+                        Renovation of buildings
+                      </h2>
+                      <p class="text-white mt-lg-5 mt-3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae libero
+                        ipsum nemo veritatis, consequuntur blanditiis inventore. Hic quae voluptate
+                        quibusdam?
+                      </p>
+                      <p class="text-gray mt-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque
+                        sint.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="row">
+                    <div class="col-2 col-lg-3"><h1 class="font-weight-bold display-4">03</h1></div>
+                    <div class="col-10 col-lg-9 pb-lg-5">
+                      <h2 class="font-weight-bold text-white">
+                        Connecting our world
+                      </h2>
+                      <p class="text-white mt-lg-5 mt-3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+                        consectetur vel nisi cum minima quae! Saepe, ex, explicabo soluta eligendi
+                        repellat magni, deserunt totam laborum excepturi ea error velit quibusdam.
+                      </p>
+                      <p class="text-gray mt-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque
+                        sint.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="projects__arrow arrow-prev d-none d-lg-flex justify-content-center align-items-center"
+            >
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <div
+              class="div projects__arrow arrow-next d-flex d-lg-none justify-content-center align-items-center"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 projects__images position-relative px-0">
+            <div class="slider">
+              <div class="slider-item"></div>
+              <div class="slider-item"></div>
+              <div class="slider-item"></div>
+            </div>
+            <div
+              class="projects__arrow arrow-next d-none d-lg-flex justify-content-center align-items-center"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials padding" id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 pr-lg-4 testimonials__text">
+            <h1 class="display-4 testimonials__heading font-weight-bold text-white">
+              our customers love what we do.
+            </h1>
+            <p class="text-white mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, dignissimos odit
+              dolores hic sequi maiores!
+            </p>
+            <a href="" class="btn btn-lg btn-light text-primary mt-3">Read a success story</a>
+          </div>
+          <div class="col-12 col-lg-6 pl-lg-5 mt-5 mt-lg-3">
+            <div class="card w-100 border-0 rounded-0 bg-white px-3 py-0">
+              <div class="row">
+                <div class="col-9">
+                  <div class="card-body pr-0">
+                    <img
+                      src="src/assets/images/quote.svg"
+                      class="testimonials__quote-icon"
+                      alt="quote"
+                    />
+                    <div class="card-text test-black mt-3">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus enim
+                      quasi adipisci.
+                    </div>
+                    <h4 class="text-black font-weight-bold mt-3">John Doe</h4>
+                  </div>
+                </div>
+                <div class="col-3 pl-0 d-flex align-items-center pr-4">
+                  <img src="src/assets/images/profile-1.jpg" alt="" class="w-100" />
+                </div>
+              </div>
+            </div>
+            <div class="card w-100 border-0 rounded-0 bg-white p-2 mt-3">
+              <div class="row">
+                <div class="col-9">
+                  <div class="card-body pr-0">
+                    <img
+                      src="src/assets/images/quote.svg"
+                      class="testimonials__quote-icon"
+                      alt="quote"
+                    />
+                    <div class="card-text test-black mt-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ut cumque unde
+                      debitis exercitationem labore?
+                    </div>
+                    <h4 class="text-black font-weight-bold mt-3">Markus Caleb</h4>
+                  </div>
+                </div>
+                <div class="col-3 pl-0 d-flex align-items-center pr-4">
+                  <img src="src/assets/images/profile-2.jpg" alt="" class="w-100" />
+                </div>
+              </div>
+            </div>
+            <div class="card w-100 border-0 rounded-0 bg-white p-2 mt-3">
+              <div class="row">
+                <div class="col-9">
+                  <div class="card-body pr-0">
+                    <img
+                      src="src/assets/images/quote.svg"
+                      class="testimonials__quote-icon"
+                      alt="quote"
+                    />
+                    <div class="card-text test-black mt-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius
+                      voluptas expedita ex.
+                    </div>
+                    <h4 class="text-black font-weight-bold mt-3">John Doe</h4>
+                  </div>
+                </div>
+                <div class="col-3 pl-0 d-flex align-items-center pr-4">
+                  <img src="src/assets/images/profile-3.jpg" alt="" class="w-100" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact bg-black padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 pr-lg-5 order-2 order-lg-1 mt-5 mt-lg-0">
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control rounded-0 bg-transparent pl-0 pt-0"
+                  id="name"
+                  placeholder=" "
+                />
+                <label for="name" class="text-gray">Name</label>
+              </div>
+              <div class="form-group mt-5">
+                <input
+                  type="email"
+                  placeholder=" "
+                  class="form-control rounded-0 bg-transparent pl-0 pt-0"
+                  id="email"
+                />
+                <label for="email" class="text-gray">Email address</label>
+              </div>
+              <div class="form-group mt-5">
+                <textarea
+                  class="form-control rounded-0 bg-transparent pl-0 pt-0"
+                  placeholder=" "
+                  id="message"
+                ></textarea>
+                <label for="message" class="text-gray">Message</label>
+              </div>
+              <a href="#" class="btn btn-lg btn-primary mt-3">Send Message</a>
+            </form>
+          </div>
+          <div class="col-12 col-lg-6 pl-lg-5 order-1">
+            <h1 class="display-4 text-primary font-weight-bold">Lets Talk.</h1>
+            <h1 class="text-white font-weight-bold">
+              ask us about anything. We'd love to hear from you.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 pr-lg-5">
+            <h3 class="text-white font-weight-bold">
+              Do you have any question or want to contact us?<br />
+              <span class="text-primary">Call us or visit us.</span>
+            </h3>
+            <div class="row mt-lg-5 mt-2">
+              <img src="src/assets/images/phone.svg" class="footer__phone-icon ml-2" alt="phone" />
+              <h4 class="text-primary font-weight-bold ml-3 mb-0 pt-1">
+                +76-543778990
+              </h4>
+            </div>
+            <span class="text-gray mt-4 d-block">3845 Raintree Boulevard</span>
+            <span class="text-gray">Minneapolis, 55402 Minnesota, USA</span>
+          </div>
+          <div class="col-12 col-md-4 px-lg-5 flex-column d-flex mt-5 mt-lg-0">
+            <h3 class="text-white font-weight-bold">
+              Quick links
+            </h3>
+            <a href="" class="text-gray mt-lg-4 mt-2 mb-2">About</a>
+            <a href="" class="text-gray my-2">Projects</a>
+            <a href="" class="text-gray my-2">Testimonials</a>
+            <a href="" class="text-gray my-2">Contact</a>
+          </div>
+          <div class="col-12 col-md-4 pl-lg-5 mt-5 mt-lg-0">
+            <div class="row m-0">
+              <a href="#" class="btn btn-primary footer__social-icon">
+                <img src="src/assets/images/facebook.svg" alt="facebook" />
+              </a>
+              <a href="#" class="btn btn-primary footer__social-icon ml-2">
+                <img src="src/assets/images/instagram.svg" alt="instagram" />
+              </a>
+            </div>
+            <p class="text-gray mt-lg-5 mt-2">
+              <span class="d-block">Monday - Friday</span
+              ><span class="d-block">9:00 AM - 6:00PM</span>
+            </p>
+            <p class="text-gray">
+              <span class="d-block">Saturday</span><span class="d-block">9:00 AM - 13:00PM</span>
+            </p>
+            <p class="text-gray"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-5">
+        <h5 class="text-gray pt-5 text-center text-lg-left">
+          &copy; This concept was create by Jan Rapacz | All rights reserved.
+        </h5>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/e317a15a78.js" crossorigin="anonymous"></script>
+    <script src="dist/js/bundle.js"></script>
+  </body>
 </html>

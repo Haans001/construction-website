@@ -1,0 +1,26 @@
+   <div class="col-12 col-lg-6 mt-5">
+            <div class="card rounded-0 bg-black text-white border-gray py-5 px-4">
+              <div class="row no-gutters">
+                <div class="col-2">
+                  <img
+                    src="src/assets/images/drawing&creation.svg"
+                    class=""
+                    alt="drawing&creation"
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body p-0">
+                    <h4 class="card-title">Commercial Construction</h4>
+                    <p class="card-text text-gray">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident,
+                      quibusdam blanditiis doloribus a saepe voluptate commodi obcaecati ut nisi
+                      dolorum quos, deserunt cumque.
+                    </p>
+                    <a href="" class="text-primary"
+                      >Learn more <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>

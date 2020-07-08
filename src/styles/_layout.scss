@@ -1,0 +1,11 @@
+.padding {
+  padding: 4rem 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 10rem 0;
+  }
+}
+.slider,
+.slider div {
+  height: 100%;
+}

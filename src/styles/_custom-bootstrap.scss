@@ -1,0 +1,62 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$theme-colors: (
+  "primary": #d72323,
+  "black": #0b0b0b,
+  "dark": #000,
+  "light-gray": #f8f8f8,
+  "gray": #414141,
+);
+
+$enable-responsive-font-sizes: true;
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.form-group {
+  position: relative;
+
+  label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    cursor: text;
+  }
+
+  textarea:focus + label,
+  input[type="text"]:focus + label,
+  input[type="email"]:focus + label,
+  input[type="text"]:not(:placeholder-shown) + label,
+  input[type="email"]:not(:placeholder-shown) + label,
+  textarea:not(:placeholder-shown) + label {
+    transform: translateY(-100%);
+  }
+}
